@@ -119,7 +119,7 @@ router.get("/api/expressions/:userId", (req, res)=>{
         return;
     }
 
-    let sql = "select * from expression where user_id = ?";
+    let sql = "select * from expression where user_id = ? and state_id = 1";
     con.query(sql, [userId], (err, rows)=>{
         if(err) throw err;
 
