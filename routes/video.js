@@ -20,8 +20,8 @@ router.get("/api/playlist/:playlistId/getVideosByUserId/:userId", (req, res)=>{
 router.post("/api/playlist/:playlistId/addVideo/", (req, res)=>{
     let data = req.body.dataObject;
 
-    let sql = "insert into video (video_title, video_url, added_at, playlist_id, user_id, yt_video_code, state_id, thumbnail, transcript) values ?";
-    con.query(sql, [[[data.videoTitle, null, new Date(), data.playlistId, data.userId, data.yt_video_code, 1, data.thumbnail, null]]], (err, result)=>{
+    let sql = "insert into video (video_title, video_url, added_at, playlist_id, user_id, yt_video_code, state_id, thumbnail, transcript, duration) values ?";
+    con.query(sql, [[[data.videoTitle, null, new Date(), data.playlistId, data.userId, data.yt_video_code, 1, data.thumbnail, null, data.duration]]], (err, result)=>{
         if(err) throw err;
 
         res.send(result).status(200);
