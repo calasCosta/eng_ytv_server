@@ -19,3 +19,24 @@ The developed project aims to create a full-stack web application whose main obj
 
 ## Educational Value
 This application combines multimedia content consumption with active vocabulary building and social learning, creating an immersive English language learning experience through authentic video content and interactive study tools.
+
+## Technology Stack
+
+### Frontend
+- **React.js** - Frontend development framework for building user interfaces
+
+### Backend
+- **Node.js/Express.js** - Server creation and management using RESTful API methodology
+
+### Database
+- **MySQL** - Relational database for data persistence
+
+### APIs & External Services
+- **YouTube API** - Consuming YouTube video data and metadata
+- **Merriam-Webster API** - Accessing dictionary definitions and word meanings
+- **Deepgram API** - Speech-to-text service for obtaining video transcripts
+- **React Google Login** - OAuth integration for user registration and authentication
+
+### Architecture
+- **RESTful API** - Communication between frontend and backend
+- **Client-Server Model** - Traditional web application architecture
